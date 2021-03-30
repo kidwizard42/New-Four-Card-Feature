@@ -1,0 +1,153 @@
+/* TO DO  List: Make the h2s and the p in .header line up. not working bc
+I put the text-align: center; */
+
+:root {
+  --main-bg-color: brown;
+  --HRed: hsl(0, 78%, 62%);
+  --HCyan: hsl(180, 62%, 55%);
+  --HOrange: hsl(34, 97%, 64%);
+  --HBlue: hsl(212, 86%, 64%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --VeryLight-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+  /* lol */
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  font-size:15px;
+  padding: 50px 0 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  color:var(--Very-Dark-Blue);
+  font-weight: 200;
+  font-size:25px;
+}
+h4{
+  margin: 0;
+  padding: 0;
+  color: var(--Very-Dark-Blue);
+  font-weight:600;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+p{
+  color: var(--Grayish-Blue);
+}
+.bold{
+  font-weight: 600;
+}
+.header {
+  text-align: center;
+    margin-bottom:70px;
+
+}
+
+.info-cards {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  border-radius: 5px;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 3px 15px 20px -9px #a1c8d6;
+  /* #a8d8ea */
+  margin-bottom:30px;
+}
+
+.info-card-img {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width:60px;
+
+  /* bottom: 20px;
+  right: 20px;
+  width:60px; */
+}
+
+.info-card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-cards p {
+  /* fix this. used to make card larger to spread img from pic */
+  margin-bottom: 100px;
+}
+
+/* individual cards */
+.supervisor {
+    border-top: 5px solid var(--HCyan);
+}
+
+
+.team-builder {
+    border-top: 5px solid var(--HRed);
+}
+
+.karma {
+    border-top: 5px solid var(--HOrange);
+}
+
+.calculator {
+
+    border-top: 5px solid var(--HBlue);
+}
+/* 768px */
+@media (min-width:1130px) {
+  body {
+  padding: 50px 50px 0;
+  }
+  h2{
+    font-size: 45px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* max-width: 1440px; */
+  }
+
+.col-two{
+  margin:0 30px;
+}
+  .header {
+    max-width:600px;
+    margin:auto;
+    /* text-align: center; */
+  }
+  .header p{
+    font-size: 17px;
+    margin-bottom:70px;
+  }
+  .info-cards {
+    width: 100%;
+    min-width: 350px;
+    max-width: 350px;
+
+    margin-bottom:30px;
+  }
+  .info-cards p {
+    /* fix this. used to make card larger to spread img from pic */
+    margin-bottom: 110px;
+  }
+  .info-card-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
